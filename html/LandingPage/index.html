@@ -6,12 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Esta é uma landing page teste">
     <title>Home</title>
+    <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-    <header>
-       <img src="img/logo-exemplo.gif" alt="logo exemplo">
-       <nav>
+    <header class="cabecalho">
+        <figure class="logoEmpresa">
+            <img src="img/logo-exemplo.gif" alt="logo exemplo">
+        </figure>    
+
+       <nav class="menu">
             <a>Início</a>
             <a>Sobre</a>
             <a>Produtos</a>
@@ -19,45 +23,81 @@
        </nav> 
     </header>
 
-    <main>
+    <main class ="corpo">
         <section>
-            <div>
-                <h1>Os melhores produtos do mercado!</h1>
-                <h2>Com sede nos Estados Unidos, a empresa começou em 1940 como uma churrascaria operada por Richard e Maurice McDonald.</h2>
-                <button>Saiba mais</button><!--Botão leva para a ancora produtos-->
-            </div>
-            <img src="img/tigelas_fundo.png" alt="Imagem Exemplo">
+            <figure class="fundoTigela">
+                <img src="img/tigelas_fundo.png" alt="Imagem Exemplo">
+                <figcaption class="corpo-apresentacao">
+                    <div class="corpo-apresentacao">
+                        <div class="tituloApresentacao">
+                            <h1>Os melhores produtos do mercado!</h1>
+                            <h2>Com sede nos Estados Unidos, a empresa começou em 1940 como uma churrascaria operada por Richard e Maurice McDonald.</h2>
+                        </div>
+                        
+                        <div class="apresentacaoBotao">
+                            <button>Saiba Mais</button>
+                        </div><!--Botão leva para a ancora produtos-->
+                        
+                    </div>
+                    
+                </figcaption>
+            </figure>
+            
+            
         </section><!--Seção Início-->
 
-        <section><!--BOTÕES DE OPÇÕES-->
-            <div>
-                <img src="img/icones/caminhao.png">
-                <h3>FRETE GRÁTIS</h3>
-                <h4>Confira as Condições</h4>
-            </div>
+        <section class="botoes-opcao"><!--BOTÕES DE OPÇÕES-->
+                <figure class="icones_main">
+                    <nav class="fundoFaixa">
+                        <nav class="icones_main">
+                            <img src="img/icones/caminhao.png">
+                        </nav>
+                        <h3>Frete Grátis</h3>
+                        <h4>Confira as Condições</h4>
+                    </nav>
+                    
+                </figure>
 
-            <div>
-                <img src="img/icones/local.png">
-                <h3>ENVIAMOS</h3>
-                <h4>para todo Brasil</h4>
-            </div>
+                <figure class="icones_main">
+                    <nav class="fundoFaixa">
+                        <nav class="icones_main">
+                            <img src="img/icones/local.png">
+                        </nav>
+                        <h3>Enviamos</h3>
+                        <h4>para todo Brasil</h4>
+                    </nav>
+                    
+                    
+                </figure>
 
-            <div>
-                <img src="img/icones/catao.png">
-                <h3>ATÉ 12X SEM JUROS</h3>
-                <h4>10% off no boleto</h4>
-            </div>
 
-            <div>
-                <img src="img/icones/shield.png">
-                <h3>100% SEGURO</h3>
-                <h4>Certificado SSL</h4>
-            </div>
+                <figure class="icones_main">
+                    <nav class="fundoFaixa">
+                        <nav class="icones_main">
+                            <img src="img/icones/catao.png">
+                        </nav>
+                        <h3>Até 12x Sem Juros</h3>
+                        <h4>10% off no boleto</h4>
+                    </nav>
+                </figure>
+                
+                <figure class="icones_main">
+                    <nav class="fundoFaixa">
+                        <nav class="icones_main">
+                            <img src="img/icones/shield.png">
+                        </nav>
+                        <h3>100% Segura</h3>
+                        <h4>Certificado SSL</h4>
+                    </nav>
+                    
+                </figure>
 
         </section>
 
         <section> <!--Seção Sobre-->
-            <div>
+                <figure class="imagemHistoria">
+                    <img src="img/Imagem_motivacional.png">
+                </figure>
                 <h1>Um pouco sobre a nossa história</h1>
                 <n>
                     definição de uma historia dita como incrível,
@@ -70,82 +110,98 @@
                     nunca tire o merito de ninguém!
 
                 </n>
-                <img src="img/Imagem_motivacional.png">
-            </div>
-            <img>
+                
         </section>
 
-        <section><!--Sessão de Produtos-->
+        <section class="sessaoProdutos"><!--Sessão de Produtos-->
             <div>
-                <img src="img/loja/tigela_1.png">
+                <figure class="loja">
+                    <img src="img/loja/tigela_1.png">
+                </figure>
+                
                 <n>descrição do produto</n>
                 <h2>Produto 1</h2>
-                <h3>R$ 00,00</h3>
-                <button>adicionar carrinho</button>
+                <button>Entre em contato</button>
             </div>
 
             <div>
-                <img src="img/loja/tigela_2.png">
+                <figure class="loja">
+                    <img src="img/loja/tigela_2.png">
+                </figure>
+
                 <n>descrição do produto</n>
                 <h2>Produto 2</h2>
-                <h3>R$ 00,00</h3>
-                <button>adicionar carrinho</button>
+                <button>Entre em contato</button>
             </div>
 
             <div>
-                <img src="img/loja/tigela_3.png">
+                <figure class="loja">
+                    <img src="img/loja/tigela_3.png">
+                </figure>
+
                 <n>descrição do produto</n>
                 <h2>Produto 3</h2>
-                <h3>R$ 00,00</h3>
-                <button>adicionar carrinho</button>
+                <button>Entre em contato</button>
             </div>
 
             <div>
-                <img src="img/loja/tigela_4.png">
+                <figure class="loja">
+                    <img src="img/loja/tigela_4.png">
+                </figure>
+
                 <n>descrição do produto</n>
                 <h2>Produto 4</h2>
-                <h3>R$ 00,00</h3>
-                <button>adicionar carrinho</button>
+                <button>Entre em contato</button>
             </div>
 
             <div>
-                <img src="img/loja/tigela_5.png">
+                <figure class="loja">
+                    <img src="img/loja/tigela_5.png">
+                </figure>
+                
                 <n>descrição do produto</n>
                 <h2>Produto 5</h2>
-                <h3>R$ 00,00</h3>
-                <button>adicionar carrinho</button>
+                <button>Entre em contato</button>
             </div>
 
             <div>
-                <img src="img/loja/tigela_6.png">
+                <figure class="loja">
+                    <img src="img/loja/tigela_6.png">
+                </figure>
+    
                 <n>descrição do produto</n>
                 <h2>Produto 6</h2>
-                <h3>R$ 00,00</h3>
-                <button>adicionar carrinho</button>
+                <button>Entre em contato</button>
             </div>
 
             <div>
-                <img src="img/loja/tigela_7.png">
+                <figure class="loja">
+                    <img src="img/loja/tigela_7.png">
+                </figure>
+
                 <n>descrição do produto</n>
                 <h2>Produto 7</h2>
-                <h3>R$ 00,00</h3>
-                <button>adicionar carrinho</button>
+                <button>Entre em contato</button>
             </div>
 
             <div>
-                <img src="img/loja/tigela_8.png">
+                <figure class="loja">
+                    <img src="img/loja/tigela_8.png">
+                </figure>
+                
                 <n>descrição do produto</n>
                 <h2>Produto 8</h2>
-                <h3>R$ 00,00</h3>
-                <button>adicionar carrinho</button>
+                <button>Entre em contato</button>
             </div>
 
             <div>
-                <img src="img/loja/tigela_9.png">
+                <figure class="loja">
+                    <img src="img/loja/tigela_9.png">
+                </figure>
+                
                 <n>descrição do produto</n>
                 <h2>Produto 9</h2>
-                <h3>R$ 00,00</h3>
-                <button>adicionar carrinho</button>
+                <button>Entre em contato</button>
             </div>
         </section>
         
@@ -180,7 +236,9 @@
         </section>
 
         <section><!--Localizacao Mapa-->
-            <img src="img/mapa.png">            
+            <figure class="mapa">
+                <img src="img/mapa.png">
+            </figure>
         </section>
 
         <section>
@@ -205,10 +263,13 @@
             
             <div>
                 <h3>METODOS DE PAGAMENTOS ACEITOS</h3>
-                <img src="img/pagamento/visaicon.png">
-                <img src="img/pagamento/mastercard.png">
-                <img src="img/pagamento/PlayPal.png">
-                <img src="img/pagamento/boleto-logo.png">
+                <figure class="pagamentos">
+                    <img src="img/pagamento/visaicon.png">
+                    <img src="img/pagamento/mastercard.png">
+                    <img src="img/pagamento/PlayPal.png">
+                    <img src="img/pagamento/boleto-logo.png">
+                </figure>
+                
 
             </div>
             

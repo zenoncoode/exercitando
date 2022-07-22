@@ -1,2 +1,195 @@
 @charset "UTf-8";
+@font-face {
+    font-family: "Comfortaa";
+    src: url(font/Comfortaa-Light.ttf);
+}
+@font-face {
+    font-family: "Bebas Neue";
+    src: url(https://fonts.google.com/specimen/Bebas+Neue#standard-styles);
+}
 
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    background-color: rgb(242, 241, 240);
+}
+
+/*
+    MENU PRINCIPAL
+*/
+
+figure.logoEmpresa img{
+    width: 202px;
+    height: 120px;
+    padding:10px,0px,10px,0px;
+}
+.cabecalho {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+
+nav.menu{
+    display: flex;
+    gap: 25px;
+}
+
+nav.menu a{    
+    font-family: "Comfortaa";
+    font-size: 20px;    
+    color: black;
+}
+
+nav.menu a:hover{
+    color: #7D6C4F;
+} 
+
+/*
+    CORPO DO TEXTO
+*/
+
+.corpo{
+    border-top: 0;
+}
+
+/* Apresentação Site  */
+
+figure.fundoTigela{  
+    position: relative;  
+    left: 0%
+}
+figcaption.corpo-apresentacao{
+    background-color: rgba(0, 0, 0, 0.4);
+    position: absolute;
+    top: 0px;
+    height: 100%;
+    width: 100%;
+    padding-top: 20%;
+
+}
+
+div.corpo-apresentacao{
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    text-align: center;    
+    align-items: center;
+}
+
+figure.fundoTigela img{
+    width: 100%;
+}
+
+figcaption.corpo-apresentacao h1{
+
+    font-size: 60px;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+div.tituloApresentacao{  
+    display: flex;
+    flex-direction: column;
+    gap: 20px
+
+}
+
+figcaption.corpo-apresentacao h2{
+    font-size: 25px;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+div.apresentacaoBotao{ 
+    /* fundo do botao */
+    background-color: black;
+    width: 209px;
+    height: 46px;
+
+}
+
+div.apresentacaoBotao:hover{
+    background-color: #7D6C4F;
+    transition: 500ms;
+}
+
+div.apresentacaoBotao button{
+    /* texto dentro do botao */
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    color: white;
+    padding: 15px;
+    display: inline-block;
+    font-family: 'Comfortaa';
+    font-size: 15px;
+    
+}
+
+/* icones do site */
+section.botoes-opcao{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    
+}
+
+figure.icones_main{
+    padding: 30px 10px;
+    position: relative;
+}
+
+nav.fundoFaixa{
+    height: 100%;
+    padding: 70px 60px;
+    background-color: white;
+}
+
+nav.icones_main{
+    padding: 0px 0px;
+    align-items: center;
+}
+
+nav.icones_main img{
+    height: 40px;
+
+}
+
+
+
+/*
+    CONFIGURAÇÕES DE IMAGEM
+*/
+/* LOJA */
+section.sessaoProdutos{
+    display: inline-block;
+}
+
+/* Formatação das Imagens */
+
+figure.iconesuperior img{
+    width: 20px;
+    height: 20px;   
+    
+}
+
+
+figure.imagemHistoria{
+    position: relative;
+    
+}
+
+figure.imagemHistoria img{    
+    height: 607px;
+    width: 980px;
+}
+figure.pagamentos img{
+    height: 10px;
+    
+}
