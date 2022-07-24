@@ -146,15 +146,17 @@ section.botoes-opcao{
     
 }
 
-figure.icones_main{
-    
+figure.icones_main{    
+
     padding: 5px;
     position: relative;
 }
 
 nav.fundoFaixa{
     height: 100%;
-    padding: 10px 5vw;
+    padding: 50px;
+
+
     background-color: white;
     align-items: center;
     text-align: center;
@@ -162,7 +164,7 @@ nav.fundoFaixa{
 
 nav.fundoFaixa h3{
     font-family: 'Zen Maru Gothic', sans-serif;
-    font-size: 1.5vw;
+    font-size: 1.4vw;
     font-weight: 100;
     text-transform: uppercase;
 }
@@ -174,13 +176,12 @@ nav.fundoFaixa h4{
 }
 
 nav.icones_main{
-    padding: 0px 0px;
     align-items: center;
 
 }
 
 nav.icones_main img{
-    height: 60px;
+    height: 50px;
 }
 
 /* SESSÃO SOBRE */
@@ -228,6 +229,38 @@ figure.imagemHistoria img{
 }
 
 /* LOJA */
+figure.loja {
+    position: relative;
+}
+
+figure.loja:hover{
+    opacity: 1;
+
+}
+
+figure.loja img{
+    
+    border-radius: 20px;
+}
+
+figure.loja button{
+    position: absolute;
+    top: 209px;
+    left: 0;
+    padding: 18px;
+    width: 100%;
+
+    font-family: "Comfortaa";
+    font-size: 15px;
+    font-weight: 1px;    
+    background-color: black;
+    color: white;
+
+    opacity: 0;
+}
+figure.loja button:hover{
+    opacity: 1;
+}
 
 
 .sessaoProdutos{
@@ -238,29 +271,63 @@ figure.imagemHistoria img{
     text-align: center;
 }
 .sessaoProdutos div{
+    align-items: center;
     padding: 20px;
-    
 }
+
 
 .sessaoProdutos h2{
     font-family: 'Zen Maru Gothic', sans-serif;
     font-weight: 540;
-    font-size: 30px;
+    font-size: 28px;
     color: black;
 }
 
 .sessaoProdutos n{
     font-family: 'Zen Maru Gothic', sans-serif;
     font-weight: 100;
-    font-size: 20px;
+    font-size: 15px;
     color: black;
 }
-
-.sessaoProdutos button{
-    font-family: "Comfortaa";
-    font-weight: 1px;
-    padding: 0.7vw;
+.sessaoProdutos div{
+    display: flex;
+    flex-direction: column;
+    gap: 20px
 }
+
+/*
+    FORMULARIO DE CONTATO
+*/
+section.rodape{
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-around;
+
+    align-content: center;
+
+    font-family: 'Zen Maru Gothic', sans-serif;
+}
+.contato{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    position: relative;
+    gap: 30px
+
+}
+.contato n{
+    position: absolute;
+    top: 1;
+}
+
+.contato input{
+    height: 30px;
+    width: 250px;
+}
+
+
 
 /* Formatação das Imagens */
 
