@@ -10,6 +10,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@300&display=swap');
 
 *{
+    font-family: 'Zen Maru Gothic', sans-serif;
     margin: 0;
     box-sizing: border-box;
     text-decoration: none;
@@ -24,8 +25,7 @@ body{
 */
 
 figure.logoEmpresa img{
-    width: 202px;
-    height: 120px;
+    height: 150px;
 }
 .cabecalho {
     display: flex;
@@ -117,6 +117,8 @@ div.apresentacaoBotao{
     width: 17vw;
     height: 8vh;
 
+    cursor: pointer;
+
 }
 
 div.apresentacaoBotao:hover{
@@ -133,6 +135,8 @@ div.apresentacaoBotao button{
     display: inline-block;
     font-family: 'Comfortaa';
     font-size: 1.2vw;
+
+    cursor: pointer;
     
 }
 
@@ -146,8 +150,7 @@ section.botoes-opcao{
     
 }
 
-figure.icones_main{    
-
+figure.icones_main{
     padding: 5px;
     position: relative;
 }
@@ -156,21 +159,17 @@ nav.fundoFaixa{
     height: 100%;
     padding: 50px;
 
-
-    background-color: white;
     align-items: center;
     text-align: center;
 }
 
 nav.fundoFaixa h3{
-    font-family: 'Zen Maru Gothic', sans-serif;
     font-size: 1.4vw;
     font-weight: 100;
     text-transform: uppercase;
 }
 
 nav.fundoFaixa h4{
-    font-family: 'Zen Maru Gothic', sans-serif;
     font-size: 1.2vw;
     font-weight: 100;
 }
@@ -186,46 +185,54 @@ nav.icones_main img{
 
 /* SESSÃO SOBRE */
 
-div.sobreConteudo{
-    position: relative;
-    width: 100%;
+.sobreConteudo{
+    
+    display: flex;
+    flex-direction: wrap;
+    flex-wrap: wrap;
+
     background-color: rgba(0,0,0,0.8);
     box-sizing: border-box;
+    align-items: center; 
+    
+    
 }
 
-div.corpoDoTexto{
-    display: flex;
-    flex-flow: column;
-    gap: 2vw;
-    padding: 5.5vw;
+.imagemHistoria{
+    width: 50vw;
+    
+}
 
-    top: 5vw;
-    left: 50%;
-    position: absolute;
+.corpoDoTexto{
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+    justify-items: center;
+    text-align: justify;
+
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 8.6vh;
+    padding-right: 8.6vh;
+    width: 703px;
         
 }
 
-div.corpoDoTexto h1{
+.corpoDoTexto h1{
     text-align: center;
     text-transform: uppercase;
     color: white;
     font-family: 'Prompt', sans-serif;
-    font-size: 2vw;
+    font-size: 30px;
 }
 
 
-div.corpoDoTexto n{
+.corpoDoTexto n{
     text-align: justify;
     font-family: 'Prompt', sans-serif;
     color: white;
-    font-size: 1.2vw;
+    font-size: 20px;
 
-}
-
-figure.imagemHistoria img{        
-    
-    width: 50vw;
-    height: 300%;
 }
 
 /* LOJA */
@@ -277,14 +284,12 @@ figure.loja button:hover{
 
 
 .sessaoProdutos h2{
-    font-family: 'Zen Maru Gothic', sans-serif;
     font-weight: 540;
     font-size: 28px;
     color: black;
 }
 
 .sessaoProdutos n{
-    font-family: 'Zen Maru Gothic', sans-serif;
     font-weight: 100;
     font-size: 15px;
     color: black;
@@ -294,42 +299,158 @@ figure.loja button:hover{
     flex-direction: column;
     gap: 20px
 }
+/*
+    RODA PÉ DA PAGINA
+*/
+.rodape{
+    background-color: white;
+    padding-top: 30px;
+}
+
+/*
+    ENDEREÇO
+*/
+
+.empresa_contato{
+    display: flex;
+    flex-direction: wrap;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    
+
+}
+
+.endereco{
+    display:  flex;
+    flex-direction: column;
+    gap: 20px;
+
+    padding: 30px;
+
+    align-items: center;
+
+}
+
+.endereco h1{
+    padding-bottom: 30px;
+    text-transform: uppercase;
+    font-weight: 100;
+}
+
+.endereco n{
+    font-size: 18px;
+}
 
 /*
     FORMULARIO DE CONTATO
 */
-section.rodape{
-    display: flex;
-    flex-direction: row;
 
-    justify-content: space-around;
-
-    align-content: center;
-
-    font-family: 'Zen Maru Gothic', sans-serif;
+.tituloContato h1{
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 100
 }
+
 .contato{
     display: flex;
     flex-direction: column;
+    padding: 30px;
+    gap: 30px;
+
     align-items: center;
 
-    position: relative;
-    gap: 30px
-
-}
-.contato n{
-    position: absolute;
-    top: 1;
+    font-size: 18px;
+    font-weight: 300;
 }
 
 .contato input{
-    height: 30px;
-    width: 250px;
+    font-size: 16px;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    border-bottom: solid black 1px;
+    
+}
+.contato n{
+    padding-bottom: 10px;
+}
+
+.contato input:hover{
+    border-bottom: solid black 3px;
+}
+.contato input:focus-visible{
+    outline: none;
+}
+
+.nomeContato,
+.mensagemContato{
+        display: flex;
+        flex-direction: column;
 }
 
 
+.nomeContato input{
+    width: 43vw;
+    height: 30px;
+}
+
+.emailTelefone{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 50px
+
+}
+
+.emailTelContato{
+    display: flex;
+    flex-direction: column;
+}
+
+.emailTelefone input{
+    width: 20vw;
+    height: 30px;
+}
+
+.mensagemContato input{
+    width: 43vw;
+    height: 110px;
+}
+
+.botaoEnviar button{ 
+    background-color: #272727;
+
+    padding: 10px 30px 10px 30px;
+    border-radius: 7px;
+
+    font-size: 18px;
+    font-weight: 500;
+    color: white;
+    cursor: pointer;
+}
+
+.botaoEnviar button:hover{
+    background-color: #0A2650;
+}
+
+/*
+MAPAs
+*/
+figure.mapa img{
+    width: 100%;
+    padding: 60px;
+}
+
+/*
+    Informações de Rodapé
+*/
+.informacaoRodape{
+
+}
 
 /* Formatação das Imagens */
+
+
 
 figure.iconesuperior img{
     width: 20px;
@@ -337,9 +458,7 @@ figure.iconesuperior img{
     
 }
 
-figure.mapa img{
-    width: 100%;
-}
+
 
 figure.pagamentos img{
     height: 10px;  
