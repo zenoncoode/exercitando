@@ -1,0 +1,9 @@
+
+
+    CORES DA LOGO
+    Laranja mais escuro;    #E85B21     rgb(232, 91, 33)
+    Laranja mais claro;     #f7b60d     rgb(247, 182, 13)
+    Cor quase preto;        #262428     rgb(38, 36, 40)
+    Cor claro;              #ECECEC     rgb(236, 236, 236)
+
+arrumar inputs do Formulario
