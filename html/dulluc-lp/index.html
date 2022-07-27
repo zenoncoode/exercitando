@@ -6,14 +6,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Esta é uma landing page teste">
-    <title>Home</title>
+    <link rel="icon" type="image/png" href="img/LogoEmpresa.svg">
+    <title>dulluc</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="sizeDesktop.css" />
 </head>
 
 <body>
     <header>
-        <section class="cabecalho">
+        <section class="cabecalho" id="menu">
             <figure class="logoEmpresa">
                 <img src="img/LogoEmpresa.svg" alt="logo exemplo">
             </figure>    
@@ -26,10 +27,9 @@
             </nav>
 
             <div class="areaRestrita">
-                <figure>
+                <a href="login-pages/login.html" target="blanck">
                     <img src="img/icones/cadeado_laranja.svg">
-                </figure>
-                
+                </a>
             </div>
          </section>
         
@@ -302,26 +302,26 @@
                 
                 <div class="nomeContato">
                     <n >Nome Completo</n>
-                    <input>                    
+                    <input type="text">                    
                 </div>
                     
                 <div class="emailTelefone">
 
                     <div class="emailTelContato">
                         <n>Telefone</n>
-                        <input>
+                        <input type="tel">
                     </div>
 
                     <div class="emailTelContato">
-                        <n >Email</n>
-                        <input>
+                        <n>Email</n>
+                        <input type="email">
                     </div>
 
                 </div>
                     
                 <div class="mensagemContato">
                     <n>Mensagem...</n>
-                    <input>
+                    <input type="text" autocomplete="off" checked="checked">
                 </div>                                        
                     
                 <div class="botaoEnviar">
@@ -375,5 +375,5 @@
         </section>
     </footer>
 </body>
-
+    <script src="scrollFade.min.js"></script>
 </html>
