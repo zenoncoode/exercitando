@@ -27,9 +27,6 @@ body{
     MENU PRINCIPAL
 */
 
-figure.logoEmpresa img{
-    height: 150px;
-}
 .cabecalho {
     display: flex;
     flex-direction: row;
@@ -45,6 +42,9 @@ figure.logoEmpresa img{
     background-color: white;
     width: 100%;
     
+}
+figure.logoEmpresa img{
+    height: 150px;
 }
 
 nav.menu{
