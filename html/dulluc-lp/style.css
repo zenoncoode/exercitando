@@ -60,7 +60,7 @@ nav.menu a{
 }
 
 nav.menu a:hover{
-    color: rgb(247, 182, 13);
+    color: #e66634;
 }
 
 
@@ -144,7 +144,7 @@ div.apresentacaoBotao{
 }
 
 div.apresentacaoBotao:hover{
-    background-color: rgb(207, 159, 37);
+    background-color: #e66634;
     transition: 500ms;
 }
 
@@ -227,7 +227,7 @@ nav.icones_main img{
 
 .imagemHistoria{
     flex-grow: 1;
-    width: 50%;
+    width: 35%;
 }
 
 .gradedotexto{
@@ -531,12 +531,25 @@ figure.mapa img{
     display: flex;
     justify-content: space-around;
     gap: 10px;
-    padding: 80px;  
+    padding: 80px; 
+    background-color: #e66634; 
+    box-shadow: 2px 0px 2px 1px rgba(0, 0, 0, 0.2);
 
 }
 .informacaoRodape p{
     font-size: 13px;
+    color:white;
     
+}
+.politicas {
+    display: flex;
+    flex-direction: column;  
+}
+
+.politicas a {
+    font-size: 13px;
+    color:white;
+
 }
 /* Formatação das Imagens */
 
@@ -552,4 +565,16 @@ figure.iconesuperior img{
 
 figure.pagamentos img{
     height: 10px;  
+}
+
+figure.whatsappBt{
+    position: fixed;
+    top: 82vh;
+    left: 92vw;
+}
+
+@media(max-width: 1300px){
+    figure.whatsappBt{
+        left: 88vw;
+    }
 }
