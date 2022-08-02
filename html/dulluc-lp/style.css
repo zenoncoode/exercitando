@@ -10,16 +10,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@300&display=swap');
 
 
+
 *{
     font-family: 'Zen Maru Gothic', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
+    
 }
 
+
 body{
-    padding-top: 155px;
+    width: 100%;
+    padding-top: 170px;
     background-color: rgb(242, 241, 240);
 }
 
@@ -27,21 +31,44 @@ body{
     MENU PRINCIPAL
 */
 
-.cabecalho {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
+    /*
+        botões de menu lateral
+    */
+.bt-sair, .bt-abrir{
+    position: absolute;
+    visibility: hidden;
+
+    cursor: pointer;
+}
+
+
+header {
+    width: 100%;
+}
+
+.corpo {
+    width: 100%;
+}
+.menu-oculto{
+    box-shadow: 2px 0px 2px 1px rgba(0, 0, 0, 0.2);
+    background-color: white;
+    width: 100%;
 
     position: fixed;
     top: 0;
     left: 0;
     z-index: 300;
 
-    box-shadow: 2px 0px 2px 1px rgba(0, 0, 0, 0.2);
-    background-color: white;
     width: 100%;
+}
+
+.cabecalho {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
     
+    flex-wrap: wrap;
 }
 figure.logoEmpresa img{
     height: 150px;
@@ -70,7 +97,13 @@ nav.menu a:hover{
 */
 
 .corpo{
-    border-top: 0;
+    border-top: 10px;
+}
+/* Carrosel */
+#carrosselLoja{
+    display: flex;
+    justify-content: center;
+
 }
 
 /* Apresentação Site  */
@@ -153,7 +186,7 @@ div.apresentacaoBotao button{
     background-color: rgba(0, 0, 0, 0);
     border: none;
     color: white;
-    padding: 1.3vw;
+    padding: 1.3vw; 
     display: inline-block;
     font-family: 'Comfortaa';
     font-size: 1.2vw;
@@ -237,6 +270,19 @@ nav.icones_main img{
     
     justify-content: center;
     padding: 100px 50px 100px 50px;    
+
+    
+    
+}
+/*
+    falhas entre 1037px = 1329px
+*/
+
+@media (min-width:1037px) and (max-width:1329px) {
+    
+    .gradedotexto{
+        padding: 40px 25px 40px 25px;
+    }        
 }
 .corpoDoTexto{
     
@@ -517,51 +563,56 @@ figure.loja img{
 }
 
 /*
-MAPAs
-*/
-figure.mapa img{
-    width: 100%;
-    padding: 60px;
-}
-
-/*
     Informações de Rodapé
 */
-.informacaoRodape{
-    display: flex;
-    justify-content: space-around;
-    gap: 10px;
-    padding: 80px; 
-    background-color: #e66634; 
+
+section.informacaoRodape{
+    background-color: #262428; 
     box-shadow: 2px 0px 2px 1px rgba(0, 0, 0, 0.2);
 
 }
-.informacaoRodape p{
-    font-size: 13px;
-    color:white;
-    
-}
-.politicas {
+
+/* 
+    Menu do Rodapé
+*/
+
+div.links{
     display: flex;
-    flex-direction: column;  
+    flex-direction: wrap;
+    justify-content: space-around;
+
+    padding-top: 14px;
+    padding-bottom: 7px;
+
+    border-bottom: white solid 3px;
 }
 
-.politicas a {
+div.links a{
     font-size: 13px;
     color:white;
-
 }
+
+div.inf-util{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 10px;
+
+    padding: 80px;
+}
+
+div.inf-util p{
+    font-size: 13px;
+    color:white;
+}
+
 /* Formatação das Imagens */
-
-
 
 figure.iconesuperior img{
     width: 20px;
     height: 20px;   
     
 }
-
-
 
 figure.pagamentos img{
     height: 10px;  
@@ -571,6 +622,10 @@ figure.whatsappBt{
     position: fixed;
     top: 82vh;
     left: 92vw;
+}
+
+figure.whatsappBt img{
+    width: 80px;
 }
 
 @media(max-width: 1300px){

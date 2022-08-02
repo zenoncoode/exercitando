@@ -1,0 +1,301 @@
+
+
+/*
+    Resolução Mobile
+*/
+@media (max-width: 800px){
+    /*
+        Menu Lateral
+    */
+    body{
+        padding-top: 52px;        
+    }
+
+    .iconesMenu{
+
+        width: 100%;
+        height: 52px;
+
+        background-color: #e66634;
+
+        position: fixed;
+        z-index: 300;
+
+        top: 0;
+        left: 0;
+
+        display: flex;
+        flex-direction: wrap;
+        align-items: center;
+    }
+
+
+    .bt-sair, .bt-abrir{
+        position: relative;
+        visibility: visible;
+    }
+
+    .bt-abrir{
+        padding-left: 10px;
+    }
+
+    .bt-abrir img{
+        height: 25px;
+    }
+
+    .menu-oculto{
+
+        left: -800px;        
+        
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .bt-sair{
+        position: relative;
+    }
+
+    .bt-sair img{
+        position: absolute;
+        top: 3vh;
+        left: 86vw;
+
+        z-index: 400;
+    }
+
+    .cabecalho{
+
+        flex-direction: column;
+        justify-content: space-around;
+
+        gap: 0px;
+        padding: 0;
+
+        height: 100%;
+
+    }
+    
+    nav.menu{
+        display: flex;
+        flex-direction: column;
+        
+
+        align-items: center;
+        text-align: center;
+
+    }
+
+    figure.logoEmpresa img{
+        width: 10vw
+    }
+        
+    /*  ADICIONA A MENU OCULTO ESSE ESTILO */
+    .menu-abrir{
+        left: 0px;
+
+    }
+
+}
+
+@media (max-width:800px) and (min-width:600px){
+
+    /*
+        correções do mobile
+    */
+    .iconesMenu{
+
+        width: 100vw;
+        height: 52px;
+    }
+
+    /*primeiro tela*/
+    figure.logoEmpresa img{   
+        width: 400px;
+    }
+
+    /*sessão sobre*/
+    .gradedotexto{
+        padding: 100px 30px 100px 30px;
+    }
+
+    /*Icone Menu*/
+    figcaption.corpo-apresentacao{
+        padding-top: 40px;
+    }
+
+    nav.fundoFaixa{
+        padding: 10px;
+    }
+
+    div.apresentacaoBotao{
+        width: 100px;
+        height: 55px;
+    }
+    .corpoDoTexto{
+        width: 550px;
+    }    
+
+    /*Formulario*/
+    .emailTelefone{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .emailTelefone input{
+        width: 43vw;
+        height: 30px;
+    }
+    
+    div.inf-util{
+        padding: 30px;
+        justify-content: space-around;
+    }
+    div.inf-util p{
+        font-size: 15px;
+    }
+
+    figure.whatsappBt{
+        top: 90vh;
+        left: 70vw;
+    }
+
+}
+
+@media (max-width:600px){
+    .iconesMenu{
+        width: 100vw;
+    }
+
+    figure.logoEmpresa img{
+        
+        width: 200px;
+    }
+
+    /*Sobre*/
+    figcaption.corpo-apresentacao{
+        padding-top: 40px;
+    }
+    
+    
+    figcaption.corpo-apresentacao h1{
+        font-size: 28px;
+    }
+    figcaption.corpo-apresentacao h2{
+        font-size: 16px;
+    }
+
+    div.apresentacaoBotao{
+        width: 70px;
+        height: 40px;
+    }
+
+    div.apresentacaoBotao button{
+        font-size: 10px;
+        padding: 5px;
+    }
+
+    figure.fundoTigela img {
+        height: 40vh;
+    }
+
+    /*icones do site*/
+    section.botoes-opcao {
+        padding: 60px 10px 60px 10px;
+    }
+
+    nav.fundoFaixa{
+        padding: 5px;
+    }
+    nav.icones_main img{
+        height: 30px 
+    }
+
+
+    nav.fundoFaixa h3{
+        font-size: 14px;
+    }
+    nav.fundoFaixa h4{
+        font-size: 12px;
+    }
+
+    /*Texto motivacional*/
+    .sobreConteudo{
+        flex-direction: column;
+    }
+
+    .imagemHistoria{
+        width: 100vw;
+    }
+
+    .gradedotexto{
+        padding: 0px;
+    }
+
+    .corpoDoTexto{
+        padding-top: 60px;
+        padding-bottom: 60px;
+        
+        width: 330px;
+    }
+    /*(@media ()*/
+
+    .corpoDoTexto h1{
+        font-size: 18px;
+    }
+
+    .corpoDoTexto n{
+        
+        height: auto;
+        font-size: 12px;
+        
+    }
+
+    /*Loja*/
+    .sessaoProdutos h2{
+        font-size: 32px;
+    }
+
+    .sessaoProdutos n{
+        font-size: 18px;
+    }
+    
+    /*formulario*/
+    .emailTelefone{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .emailTelefone input{
+        width: 43vw;
+        height: 30px;
+    }
+
+    figure.whatsappBt{
+        top: 80vh;
+        left: 75vw;
+    }   
+}
+@media (max-width: 370px){
+    figure.loja img{
+        width: 250px;
+    }
+    section.botoes-opcao {
+        flex-wrap: wrap;
+    }
+
+    .gradedotexto{
+        width: 250px;
+    }
+
+    /* LOJA */
+    .botaoLoja{
+        width: 250px;
+        height: 250px;
+    }
+
+    .sessaoProdutos{
+        padding: 0px;
+    }
+    
+}
+

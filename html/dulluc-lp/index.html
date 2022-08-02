@@ -8,34 +8,97 @@
     <meta name="description" content="Esta é uma landing page teste">
     <link rel="icon" type="image/png" href="img/LogoEmpresa.svg">
     <title>dulluc</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="sizeDesktop.css" />
+
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    
+    <!-- Formatação Principal -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Redimensionamento de Telas -->
+    <link rel="stylesheet" href="sizeDesktop.css">
+
+    <!-- Redimensionamento Mobile -->
+    <link rel="stylesheet" href="sizePhone.css">
+
+    
+    
+
 </head>
 
-<body>
-    <header>
-        <section class="cabecalho" id="menu">
-            <figure class="logoEmpresa">
-                <img src="img/LogoEmpresa.svg" alt="logo exemplo">
-            </figure>    
-
-            <nav class="menu">
-                <a href="#inicio" target="_self">Início</a>                
-                <a href="#sobre">Sobre</a>
-                <a href="#produtos">Produtos</a>
-                <a href="#contato">Contato</a>
-            </nav>
-
-            <div class="areaRestrita">
-                <a href="login-pages/login.html" target="blanck">
-                    <img src="img/icones/cadeado_laranja.svg">
-                </a>
-            </div>
-         </section>
-        
-    </header>
+<body>    
 
     <main class ="corpo">
+        <section class="iconesMenu">
+            <figure class="bt-abrir">
+                <img src="img/icones/menu.svg">
+            </figure>
+        </section>
+
+        <section class="menu-oculto">
+            <figure class="bt-sair">
+                <img src="img/icones/xfechar.svg">
+            </figure>
+            
+            <nav class="cabecalho">
+                <figure class="logoEmpresa">
+                    <img src="img/LogoEmpresa.svg" alt="logo exemplo">
+                </figure>
+    
+                <nav class="menu">
+                    <a href="#inicio">Início</a>                
+                    <a href="#sobre">Sobre</a>
+                    <a href="#produtos">Produtos</a>
+                    <a href="#contato">Contato</a>
+                </nav>
+    
+                <div class="areaRestrita">
+                    <a href="login-pages/login.html" target="blanck">
+                        <img src="img/icones/cadeado_laranja.svg">
+                    </a>
+                </div>
+            </nav>
+
+        </section>
+
+        <!-- carrossel -->
+        <div class="itensCarrosel">
+        <div id="carrosselLoja" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carrosselLoja" data-slide-to="0" class="active"></li>
+              <li data-target="#carrosselLoja" data-slide-to="1"></li>
+              <li data-target="#carrosselLoja" data-slide-to="2"></li>
+            </ol> 
+        
+            <div class="carousel-inner" style="width: 40vw;">
+              
+              <div class="carousel-item active">                
+        
+                <img class="d-block w-100" src="img/loja/p1.jpeg" alt="Primeiro Slide">
+              </div>
+        
+              <div class="carousel-item">
+        
+                <img class="d-block w-100" src="img/loja/p8.jpeg" alt="Segundo Slide">
+              </div>
+        
+              <div class="carousel-item">
+                
+                <img class="d-block w-100" src="img/loja/p16.jpeg" alt="Terceiro Slide">
+              </div>
+        
+            </div>
+            
+            <!-- indicaroes de direção -->
+            <a class="carousel-control-prev" href="#carrosselLoja" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Anterior</span>
+            </a>
+            <a class="carousel-control-next" href="#carrosselLoja" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Próximo</span>
+            </a>
+          </div>
+        </div>
 
         <!--Seção Início-->
         <section id="inicio">
@@ -335,43 +398,54 @@
         </section>
 
         <section>
-            <figure class="mapa">
-                <img src="img/mapa.png">
-            </figure>
+            <iframe style="width: 100%;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.70815963207!2d-46.505827499999995!3d-23.578922799999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce6777ee92674d%3A0xb3c737cdd7225def!2sRua%20dos%20Fonsecas%2C%20396%20-%20Vila%20Nova%20York%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2003480-030!5e0!3m2!1spt-BR!2sbr!4v1659047223795!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </section>
 
+        <section>
+            
+        </section>
+            
         <section class="informacaoRodape">
-            <div class="politicas">
+            
+            <div class="links">
                 <a href="#inicio">Início</a>
                 <a href="#sobre">Sobre</a>
                 <a href="#produtos">Produtos</a>
                 <a href="#contato">Contato</a>
             </div>
 
-            <div>
-                <p>Dulluc - CPF/CNPJ: 12.345.678/0001-01 -</p>
-                <p>Rua dos Fonseca, 396 - Vila Nova York - São Paulo SP - CEP: 03480-030</p>
-                <p>marketing@dulluc.com.br - Telefone: (11) 994701-5629  (11) 994038-8974</p>
-                <p>Estimativa de entrega 2 - 5 dias úteis</p>
-            </div>
-
-            <div>
-                <p>SEGURANÇA</p>
-                <p>Ambiente 100% Seguro.</p>
-                <p>Sua Informação é Protegida Pela Criptografia SSL 256-Bit.</p>
+            <div class="inf-util">
+                <div>
+                    <figure class="logoEmpresa">
+                        <img src="img/LogoEmpresa.svg" alt="logo exemplo">
+                    </figure>
+                </div>
+                <div>
+                    <p>Dulluc - CPF/CNPJ: 12.345.678/0001-01 -</p>
+                    <p>Rua dos Fonseca, 396 - Vila Nova York - São Paulo SP - CEP: 03480-030</p>
+                    <p>marketing@dulluc.com.br - Telefone: (11) 994701-5629  (11) 994038-8974</p>
+                    <p>Estimativa de entrega 2 - 5 dias úteis</p>
+                </div>
+    
+                <div>
+                    <p>SEGURANÇA</p>
+                    <p>Ambiente 100% Seguro.</p>
+                    <p>Sua Informação é Protegida Pela Criptografia SSL 256-Bit.</p>
+                </div>
+                
+                <div>
+                    <p>METODOS DE PAGAMENTOS ACEITOS</p>
+                    <figure class="pagamentos">
+                        <img src="img/pagamento/visaicon.png">
+                        <img src="img/pagamento/mastercard.png">
+                        <img src="img/pagamento/PlayPal.png">
+                        <img src="img/pagamento/boleto-logo.png">
+                    </figure>
+                    
+    
+                </div>
             </div>
             
-            <div>
-                <p>METODOS DE PAGAMENTOS ACEITOS</p>
-                <figure class="pagamentos">
-                    <img src="img/pagamento/visaicon.png">
-                    <img src="img/pagamento/mastercard.png">
-                    <img src="img/pagamento/PlayPal.png">
-                    <img src="img/pagamento/boleto-logo.png">
-                </figure>
-                
-
-            </div>
             
         </section>
         
@@ -386,4 +460,5 @@
 </body>
     <script src="jquery-library.js"></script>
     <script src="script.js"></script>
+    <script src="js/bootstrap.min.js"></script>
 </html>
